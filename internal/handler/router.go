@@ -7,7 +7,8 @@ import (
 func NewRouter() *mux.Router {
 	r := mux.NewRouter()
 
-	// api := r.PathPrefix("/api").Subrouter()
+	v1 := r.PathPrefix("/api/v1").Subrouter()
+	v1.HandleFunc("/v1/hello", handleHello).Methods("GET")
 	r.HandleFunc("/hello", handleHello).Methods("GET")
 
 	return r
