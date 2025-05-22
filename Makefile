@@ -10,6 +10,10 @@ build:
 	@echo "Building the application..."
 	@go build -o $(BINARY_NAME) $(MAIN_DIR)
 
+start:
+	@echo "Starting the application..."
+	@./$(BINARY_NAME)
+
 clean:
 	@echo "Cleaning up..."
 	@rm -f $(BINARY_NAME)
