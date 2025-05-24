@@ -1,0 +1,9 @@
+# Ignore typical Go build artifacts
+/bin/
+/obj/
+/*.exe
+*.log
+*.test
+vendor/
+.DS_Store
+*.swp

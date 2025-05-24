@@ -7,11 +7,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-800 p-8 font-sans text-white">
-  <h1 class="text-2xl font-bold mb-4">Greeting</h1>
+  <h1 class="text-2xl font-bold mb-4">Salutations, fine shyt</h1>
 
-    <div id="hello">
-      <button class="bg-yellow-400 rounded px-4 px-6 hover:bg-yellow-600 transition" hx-get="/hello" hx-target="#hello" hx-swap="innerHTML">
-    Say Hello
+    <div id="customer" class="px-4 py-6">
+      <button class="bg-yellow-600 rounded w-48 h-16 hover:bg-yellow-800 transition" hx-get="/customer/hello" hx-target="#customer" hx-swap="innerHTML">
+    Become a person
+      </button>
+    </div>
+    <div id="purchase" class="px-4 py-6">
+      <button class="bg-green-600 rounded w-48 h-16 hover:bg-green-800 transition" hx-get="/purchase/hello" hx-target="#purchase" hx-swap="innerHTML">
+    Send me money
       </button>
     </div>
 
